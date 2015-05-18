@@ -1,0 +1,45 @@
+{
+    "name": "themightysapien/loggable",
+    "description": ":This packages allows the laravel models to have automatic logging",
+    "keywords": [
+        "themightysapien",
+        "loggable"
+    ],
+    "homepage": "https://github.com/thephpthemightysapien/loggable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "themightysapien",
+            "email": "themightysapien@gmail.com",
+            "homepage": "#",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/database": "4.* | 5.*",
+        "illuminate/support": "4.* | 5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+        /*"scrutinizer/ocular": "~1.1"*/
+    },
+    "autoload": {
+        "psr-4": {
+            "Themightysapien\\Loggable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Themightysapien\\Loggable\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
