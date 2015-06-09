@@ -20,4 +20,20 @@ class Log extends \Eloquent
         return $this->belongsTo('App\User', 'user_id');
     }
 
+    public function getModelName(){
+        return $this->loggable_entry_for;
+    }
+
+    public function getLogEntry(){
+        return $this->log_entry;
+    }
+
+    public function getAction(){
+        return $this->log_entry_type;
+    }
+
+    public function getRoute(){
+        return $this->loggable_route;
+    }
+
 } 

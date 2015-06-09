@@ -12,7 +12,7 @@ namespace Themightysapien\Loggable\Traits;
 use Themightysapien\Loggable\Logs\Log;
 
 trait LoggableModelTrait {
-    
+
     public function logs()
     {
         return $this->morphMany('App\Modules\Logs\Log', 'loggable');
