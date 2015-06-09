@@ -3,7 +3,9 @@
     "description": ":This packages allows the laravel models to have automatic logging",
     "keywords": [
         "themightysapien",
-        "loggable"
+        "loggable",
+        "laravel",
+        "logs"
     ],
     "homepage": "https://github.com/thephpthemightysapien/loggable",
     "license": "MIT",
@@ -21,7 +23,7 @@
         "illuminate/support": "4.* | 5.*"
     },
     "require-dev": {
-        "phpunit/phpunit" : "4.*"        
+        "phpunit/phpunit" : "4.*"
     },
     "autoload": {
         "psr-4": {
