@@ -12,15 +12,16 @@ namespace Themightysapien\Loggable\Traits;
 use Themightysapien\Loggable\Logs\Log;
 
 trait LoggableModelTrait {
+    
     public function logs()
     {
         return $this->morphMany('App\Modules\Logs\Log', 'loggable');
     }
 
 
-    public static function boot()
+    public static function bootLoggableModelTrait()
     {
-        parent::boot();
+
 
         /*if the table has user_id just set it to current id*/
         static::creating(function($model){
