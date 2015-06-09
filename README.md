@@ -13,6 +13,10 @@ $ composer require themightysapien/loggable
 Add the service provider to the providers array in app.php
 ``` bash
 Themighty\Mediamanager\LoggableServiceProvider
+
+//THen do vendor:publish from the artisan command to copy the migration file migrate it
+php artisan vendor:publish
+php artisan migrate
 ```
 
 ## Usage
@@ -53,14 +57,14 @@ THen you can display the logs as follows
 //then inside the loop you can access the user with ->user property
 
 foreach($model->logs as $log){
-    echo $log->getModelName().' '.$log->getLogEntry().' '.$log->getAction();
+    echo $log->getModelName().' || '.$log->getLogEntry().' ||'.$log->getAction();
     echo '<br>';
     echo 'By :'.$log->user->name.' at '.$log->created_at;
 }
 ```
 The above code will produce the result like
 
-**Inventory Item Milk added**
+**Inventory Item** || **Milk** || **added**
 
 By **themightysapien** at 2015-12-12 00:00:00
 
