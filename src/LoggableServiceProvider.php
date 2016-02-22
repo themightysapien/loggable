@@ -1,4 +1,4 @@
-<?php namespace Themighty\Mediamanager;
+<?php namespace Themighty\Loggable;
 
 use Illuminate\Support\ServiceProvider;
 

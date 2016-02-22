@@ -12,7 +12,7 @@ $ composer require themightysapien/loggable
 ```
 Add the service provider to the providers array in app.php
 ``` bash
-Themighty\Mediamanager\LoggableServiceProvider
+Themighty\Loggable\LoggableServiceProvider
 
 //THen do vendor:publish from the artisan command to copy the migration file migrate it
 php artisan vendor:publish
