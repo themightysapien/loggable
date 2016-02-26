@@ -24,7 +24,7 @@ php artisan migrate
 ``` php
 //use LoggableModelTrait in any of your models whose CRUD logs you want to keep
 class DemoModel extends \Eloquent {
-    use Themighty\Mediamanager\Traits\LoggableModelTrait
+    use Themighty\Loggable\Traits\LoggableModelTrait
 }
 ```
 Then you need to define a **getLogData()** function as
